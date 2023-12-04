@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-10">
                     <input type="text" class="form-control border-top-0 border-start-0 border-end-0 rounded-0"
-                        id="inputTarea" minlength="4" maxlength="40" placeholder="Nueva tarea" required>
+                        id="inputTarea" minlength="1" maxlength="100" placeholder="Nueva tarea" required>
                 </div>
                 <div class="col-1 text-center h-auto">
                     <button type="submit" class="btn btn-success" onclick="agregarTarea(event)"><b>+</b></button>
@@ -37,20 +37,15 @@
         </form>
 
         <div class="mt-5 mx-auto" id="sectionList">
-            <table class="table">
-                <thead>
+            <table class="table" id="table">
+                <thead id="thead">
                     <tr class="">
                         <th class="col-1" scope="col">#</th>
                         <th class="col-10" scope="col">Tarea</th>
                         <th class="col-1" scope="col"></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th class="col-1"  scope="row">1</th>
-                        <td class="col-10" >Tarea ejemplo</td>
-                        <td class="col-1" > <button class="border-0 bg-white btnDelete" onclick="borrarItem()"><i class="fa-solid fa-trash"></i></button></td>
-                    </tr>
+                <tbody id="tbody">
                 </tbody>
             </table>
         </div>
